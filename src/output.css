@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-300: oklch(80.9% 0.105 251.813);
@@ -213,6 +214,12 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-\[5px\] {
+    top: 5px;
+  }
+  .top-\[10px\] {
+    top: 10px;
+  }
   .top-\[20px\] {
     top: 20px;
   }
@@ -249,6 +256,12 @@
   .right-\[100px\] {
     right: 100px;
   }
+  .right-\[440px\] {
+    right: 440px;
+  }
+  .right-\[640px\] {
+    right: 640px;
+  }
   .bottom-\[-50px\] {
     bottom: -50px;
   }
@@ -270,6 +283,15 @@
   .left-\[00px\] {
     left: 00px;
   }
+  .left-\[5px\] {
+    left: 5px;
+  }
+  .left-\[10px\] {
+    left: 10px;
+  }
+  .left-\[40px\] {
+    left: 40px;
+  }
   .left-\[100p\] {
     left: 100p;
   }
@@ -282,8 +304,14 @@
   .left-\[300px\] {
     left: 300px;
   }
+  .left-\[340px\] {
+    left: 340px;
+  }
   .left-\[400px\] {
     left: 400px;
+  }
+  .left-\[440px\] {
+    left: 440px;
   }
   .left-\[470px\] {
     left: 470px;
@@ -293,6 +321,9 @@
   }
   .left-\[600px\] {
     left: 600px;
+  }
+  .left-\[640px\] {
+    left: 640px;
   }
   .left-\[650px\] {
     left: 650px;
@@ -516,6 +547,9 @@
   .gap-\[30px\] {
     gap: 30px;
   }
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
+  }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
   }
@@ -527,6 +561,9 @@
   }
   .gap-y-1 {
     row-gap: calc(var(--spacing) * 1);
+  }
+  .gap-y-3 {
+    row-gap: calc(var(--spacing) * 3);
   }
   .gap-y-5 {
     row-gap: calc(var(--spacing) * 5);
@@ -707,6 +744,9 @@
   }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
+  }
+  .bg-red-50 {
+    background-color: var(--color-red-50);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -928,14 +968,34 @@
       top: 10px;
     }
   }
+  .lg\:top-\[40px\] {
+    @media (width >= 64rem) {
+      top: 40px;
+    }
+  }
   .lg\:top-\[50px\] {
     @media (width >= 64rem) {
       top: 50px;
     }
   }
+  .lg\:top-\[55px\] {
+    @media (width >= 64rem) {
+      top: 55px;
+    }
+  }
+  .lg\:top-\[60px\] {
+    @media (width >= 64rem) {
+      top: 60px;
+    }
+  }
   .lg\:top-\[100px\] {
     @media (width >= 64rem) {
       top: 100px;
+    }
+  }
+  .lg\:top-\[150px\] {
+    @media (width >= 64rem) {
+      top: 150px;
     }
   }
   .lg\:top-\[200px\] {
@@ -953,6 +1013,16 @@
       top: 270px;
     }
   }
+  .lg\:top-\[280px\] {
+    @media (width >= 64rem) {
+      top: 280px;
+    }
+  }
+  .lg\:top-\[350px\] {
+    @media (width >= 64rem) {
+      top: 350px;
+    }
+  }
   .lg\:top-\[400px\] {
     @media (width >= 64rem) {
       top: 400px;
@@ -966,6 +1036,36 @@
   .lg\:right-\[30px\] {
     @media (width >= 64rem) {
       right: 30px;
+    }
+  }
+  .lg\:right-\[160px\] {
+    @media (width >= 64rem) {
+      right: 160px;
+    }
+  }
+  .lg\:right-\[180px\] {
+    @media (width >= 64rem) {
+      right: 180px;
+    }
+  }
+  .lg\:right-\[200px\] {
+    @media (width >= 64rem) {
+      right: 200px;
+    }
+  }
+  .lg\:right-\[250px\] {
+    @media (width >= 64rem) {
+      right: 250px;
+    }
+  }
+  .lg\:right-\[300px\] {
+    @media (width >= 64rem) {
+      right: 300px;
+    }
+  }
+  .lg\:right-\[360px\] {
+    @media (width >= 64rem) {
+      right: 360px;
     }
   }
   .lg\:bottom-\[10px\] {
@@ -983,9 +1083,39 @@
       bottom: 200px;
     }
   }
+  .lg\:left-\[50px\] {
+    @media (width >= 64rem) {
+      left: 50px;
+    }
+  }
+  .lg\:left-\[100px\] {
+    @media (width >= 64rem) {
+      left: 100px;
+    }
+  }
+  .lg\:left-\[180px\] {
+    @media (width >= 64rem) {
+      left: 180px;
+    }
+  }
+  .lg\:left-\[300px\] {
+    @media (width >= 64rem) {
+      left: 300px;
+    }
+  }
+  .lg\:left-\[360px\] {
+    @media (width >= 64rem) {
+      left: 360px;
+    }
+  }
   .lg\:left-\[600px\] {
     @media (width >= 64rem) {
       left: 600px;
+    }
+  }
+  .lg\:left-\[1800px\] {
+    @media (width >= 64rem) {
+      left: 1800px;
     }
   }
   .lg\:z-10 {
