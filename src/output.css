@@ -25,6 +25,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
@@ -199,6 +201,9 @@
   .relative {
     position: relative;
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-\[20px\] {
     top: 20px;
   }
@@ -210,6 +215,9 @@
   }
   .top-\[270px\] {
     top: 270px;
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
   }
   .right-\[1px\] {
     right: 1px;
@@ -232,6 +240,12 @@
   .right-\[100px\] {
     right: 100px;
   }
+  .bottom-\[-50px\] {
+    bottom: -50px;
+  }
+  .bottom-\[5px\] {
+    bottom: 5px;
+  }
   .bottom-\[30px\] {
     bottom: 30px;
   }
@@ -240,6 +254,9 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
+  }
+  .left-\[-100px\] {
+    left: -100px;
   }
   .left-\[00px\] {
     left: 00px;
@@ -255,6 +272,12 @@
   }
   .left-\[300px\] {
     left: 300px;
+  }
+  .left-\[400px\] {
+    left: 400px;
+  }
+  .left-\[470px\] {
+    left: 470px;
   }
   .left-\[500px\] {
     left: 500px;
@@ -502,6 +525,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-\[3\] {
+    padding: 3;
+  }
   .p-\[10px\] {
     padding: 10px;
   }
@@ -529,6 +555,9 @@
   .px-\[30px\] {
     padding-inline: 30px;
   }
+  .pb-\[30px\] {
+    padding-bottom: 30px;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -549,6 +578,10 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -556,6 +589,21 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[2px\] {
+    font-size: 2px;
+  }
+  .text-\[4px\] {
+    font-size: 4px;
+  }
+  .text-\[5px\] {
+    font-size: 5px;
+  }
+  .text-\[6px\] {
+    font-size: 6px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -746,6 +794,11 @@
   .lg\:rounded-bl-\[10px\] {
     @media (width >= 64rem) {
       border-bottom-left-radius: 10px;
+    }
+  }
+  .lg\:p-\[40px\] {
+    @media (width >= 64rem) {
+      padding: 40px;
     }
   }
   .lg\:p-\[50px\] {
