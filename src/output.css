@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-300: oklch(80.9% 0.105 251.813);
@@ -214,6 +215,21 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-\[-40px\] {
+    top: -40px;
+  }
+  .top-\[-100px\] {
+    top: -100px;
+  }
+  .top-\[-200px\] {
+    top: -200px;
+  }
+  .top-\[-300px\] {
+    top: -300px;
+  }
+  .top-\[-400px\] {
+    top: -400px;
+  }
   .top-\[5px\] {
     top: 5px;
   }
@@ -232,11 +248,17 @@
   .top-\[270px\] {
     top: 270px;
   }
+  .top-\[300px\] {
+    top: 300px;
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
   .right-\[1px\] {
     right: 1px;
+  }
+  .right-\[5\] {
+    right: 5;
   }
   .right-\[10px\] {
     right: 10px;
@@ -681,6 +703,10 @@
     border-left-style: var(--tw-border-style);
     border-left-width: 4px;
   }
+  .border-l-6 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 6px;
+  }
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
@@ -702,6 +728,9 @@
   }
   .border-gray-600 {
     border-color: var(--color-gray-600);
+  }
+  .border-red-600 {
+    border-color: var(--color-red-600);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -816,6 +845,9 @@
   }
   .pb-\[32x\] {
     padding-bottom: 32x;
+  }
+  .pb-\[60px\] {
+    padding-bottom: 60px;
   }
   .pb-\[x\] {
     padding-bottom: x;
