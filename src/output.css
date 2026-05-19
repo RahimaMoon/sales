@@ -504,6 +504,9 @@
   .gap-\[5px\] {
     gap: 5px;
   }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
   .gap-\[18px\] {
     gap: 18px;
   }
@@ -537,8 +540,14 @@
   .gap-y-15 {
     row-gap: calc(var(--spacing) * 15);
   }
+  .gap-y-17 {
+    row-gap: calc(var(--spacing) * 17);
+  }
   .gap-y-20 {
     row-gap: calc(var(--spacing) * 20);
+  }
+  .gap-y-\[10px\] {
+    row-gap: 10px;
   }
   .gap-y-\[20px\] {
     row-gap: 20px;
